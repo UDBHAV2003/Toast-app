@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+html,body{
+    /* max-width: 800px; */
+    font-size: 30px;
+    font-family: monospace ;
+    font-style: italic;
+   
+  
+}
+
+
+h2{
+    text-align: center;
+    background-color: red;
+    color: white;
+    width: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    
+    
+   
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    gap: 30px;
+    font-style: italic;
+  
+    background-color: rgb(255, 188, 5);
+     
+
+
+   
+}
+
+.toast-messageContainer.success {
+    background-color: #009600;
+}
+.toast-messageContainer.error {
+    background-color: #f5a7a7;
+}
+.toast-messageContainer.warning {
+    background-color: #909090;
+}
+.toast-messageContainer.info {
+    background-color: #2e302e;
+
+}
+.toast-messageContainer{
+    color: white;
+}
+
+
+select,input ,option,button{
+    background-color: aqua;
+    font-size: 0.6rem;
+    padding:10px;
+
+}
+
+.duration-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-inline: 08px;
+}
+#range{
+    width: 100%;
+    /* flex-grow: 1; */
+}
+
+span{
+    font-size: 0.8rem;
+}
+/* ************************************************************** */
+
+/* .toast-messageContainer.success::before{
+    content: '✅';
+}
+.toast-messageContainer.error::before{
+    content: '❌';
+}
+.toast-messageContainer.info::before{
+    content: 'ⓘ';
+}
+.toast-messageContainer.warning::before{
+    content: '⚠️';
+} */
+
+
+.toast-icon {
+  font-size: 0.7rem;
+  
+}
+
+.toast-text {
+  font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+/* ************************************************************************ */
+.toast-messageContainer::after{
+    content: '❌';
+}
+
+
+
+.toast-messageContainer{
+    font-size: 0.6rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    background-color: aqua;
+    width: fit-content;
+    padding: 8px;
+    margin-bottom: 10px;
+    min-width: 100px;
+    color: aliceblue;
+    display: flex;
+    gap: 10px;
+    border-radius: 5px;
+    
+
+    
+}
+
+.show-toastMessage {
+  position: absolute; /* or fixed */
+  top: 2.5rem;
+  left: 0.5rem;
+}
+
+.process-toastMessage{
+    border: none;
+}
+
+
+.right {
+    left: auto;
+    right: 0rem;
+}
+
+.bottom {
+    top: auto;
+    bottom: 0rem;
+}
+
+
+/* 
+.toast.go-left {
+    animation: toLeft 0.1s ease-in forwards;
+}
+ */
